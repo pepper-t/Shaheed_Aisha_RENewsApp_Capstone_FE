@@ -38,7 +38,7 @@ Cors for connecting backend server to frontend
 
 
 
-##### FRONTEND & BACKEND SERVER: CONNECTED #####
+##### FRONTEND & BACKEND SERVER: CONNECTED ##### (Not Yet)
 
 GITHUB REPO -> FRONTEND:    https://github.com/pepper-t/Shaheed_Aisha_RENewsApp_Capstone_FE 
 
