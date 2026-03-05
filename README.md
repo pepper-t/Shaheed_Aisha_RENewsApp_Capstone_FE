@@ -27,10 +27,30 @@ Cors for connecting backend server to frontend
 
 
 
+# HELPFUL RESOURCES #
+
+I watched the following YouTube videos for learning how to use NewsAPI in my code:
+
+1 - https://www.youtube.com/watch?v=m1Z9lVdlQuM&list=TLPQMDQwMzIwMjYplN5yEfqEBw&index=2
+
+I also checked out his repo at https://github.com/AndyUGA/news-api-project-tutorial 
+
+
+
+
+
+
+
+
 ## ERRORS/DEBUGGING ##
 
+I updated my script to have React routers. None of the YouTube videos or repos associated with them had React routers. I adapted my script for that.
 
-# HELPFUL RESOURCES #
+When the pages for http://localhost:5173 appeared blank the Google Dev Tool indicated that NewsGrid.jsx had an import/export issue on App.jsx. Originally, it was import { NewsGrid } from '../components'. 
+
+When I updated as per Google's Dev Tool instructions to import NewsGrid from '../components' the router links appeared for each page.
+
+
 
 
 
@@ -38,7 +58,7 @@ Cors for connecting backend server to frontend
 
 
 
-##### FRONTEND & BACKEND SERVER: CONNECTED ##### (Not Yet)
+##### FRONTEND & BACKEND SERVER: CONNECTED #####
 
 GITHUB REPO -> FRONTEND:    https://github.com/pepper-t/Shaheed_Aisha_RENewsApp_Capstone_FE 
 
