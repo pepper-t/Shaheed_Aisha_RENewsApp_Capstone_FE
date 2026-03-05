@@ -17,6 +17,9 @@ export default function Navigation() {//Clickable links are on all pages
         <Link to="/contact">
         <div>Contact</div>
       </Link>
+      <Link to="/newsgrid">
+        <div>NewsGrid</div>
+      </Link>
       
     </div>  
   );
