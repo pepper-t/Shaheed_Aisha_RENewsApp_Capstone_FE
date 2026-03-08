@@ -12,17 +12,19 @@ import Navigation from "./components/NavBar";
   export default function App() {
   return (
     <div>
-      Linking page
+   
       <Navigation />
-      <Routes>
+      <Routes>       
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/newsgrid" element={<NewsGrid />} />
       </Routes>
+     
+      
        </div>
-         
+     
   );
 
   
