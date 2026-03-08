@@ -1,0 +1,196 @@
+
+
+/* THIS WORKS!*/
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Puts logo on the left, links on the right */
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo a {
+  /*color: white;*/
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
+.navbar h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;;
+}
+.nav-links {
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Arranges list items horizontally */
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-links li {
+  margin-left: 20px; /* Adds space between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4da6ff;
+}
+
+/* Style for the active link using NavLink's activeClassName */
+.nav-links a.active {
+  color: #4da6ff;
+  border-bottom: 2px solid #4da6ff;
+}
+
+
+
+
+
+/*
+
+DID NOT WORK!!!
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+
+  /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
+  /*
+}
+.logo {
+  font-size: 30px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+.nav-links li {
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.hero {
+  text-align: center;
+  margin-top: 15%;
+}
+.hero h1 {
+  text-align: center;
+  font-size: 80px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+button {
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+}
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: white;
+  }
+  ul li {
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+  .hero h3 {
+    font-size: 50px;
+  }
+}
+
+/*.nav-links Link {
+    text-decoration: none;
+
+}
+*/
+
+
+/*
+.nav{
+    background-color: #333;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+align-items: center;
+gap: 2rem;
+padding: 0 1rem;
+
+}
+
+
+
+.nav a {
+
+    color: inherit;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
