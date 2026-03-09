@@ -10,7 +10,7 @@ export default function Navigation() {//Clickable links are on all pages
   return (
    <nav className='navbar'>
     <div className='logo'><img src="src/assets/images/housetrap_small.svg" alt="house in a mousetrap" /></div>
-  <h1>Housetrap-Free Zone</h1>
+  <h1 className="housetrap">Housetrap</h1><h1>-Free Zone</h1>
 
 <span></span>
         <span></span>
@@ -27,8 +27,8 @@ export default function Navigation() {//Clickable links are on all pages
       <Link to="/blog" activeClassName="active">
         <li>Blog</li>
       </Link>
-        <Link to="/contact" activeClassName="active">
-        <li>Contact</li>
+        <Link to="/join" activeClassName="active">
+        <li>Join</li>
       </Link>
       <Link to="/newsgrid" activeClassName="active">
         <li>NewsGrid</li>
