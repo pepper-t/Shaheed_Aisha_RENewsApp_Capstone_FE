@@ -1,4 +1,199 @@
 
+
+
+import { useState } from "react";
+import axios from "axios";
+import UserHome from '../components/UserHome.jsx';
+
+export default function CreateForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  async function handleSubmit(e) {
+     
+    e.preventDefault();
+    try {
+
+      //Manipulate data to final state
+
+      let copy = { ...formData };
+      
+    let res = await axios.post("http://localhost:3000/api/users", copy);
+ 
+      setFormData({ name: "", email: "" }); // Reset
+    } catch (err) {
+      console.error(err.message);
+      alert(err.message);
+    }
+
+  }
+
+  return (
+    <div className="createForm">
+      <UserHome></UserHome>
+      <h1>
+            Get FREE Access to a Huge Treasure Trove of Real Estate Investing
+            Know-How!
+          </h1>
+          <br />
+          <h3>Complete form below to join</h3>
+          <br />
+      <fieldset style={{ textAlign: "center" }}>
+        <legend>
+          Register
+        </legend>
+        <form onSubmit={handleSubmit}>
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              placeholder="Name..."
+              onChange={handleChange}
+              value={formData.name}
+              required
+            />
+          </label>
+          <br />
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="Email..."
+              onChange={handleChange}
+              value={formData.email}
+              required
+            />
+          </label>
+          <br />
+          <input type="submit" value="I Want My FREE Offer NOW!!" />
+        </form>
+      </fieldset>
+    </div>
+  );
+}
+
+
+
+
+
+/*
+import { useState } from "react";
+import axios from "axios";
+//import '../components/createForm.css';
+
+export default function CreateForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  async function handleSubmit(e) {
+     
+    e.preventDefault();
+    try {
+
+    let res = await axios.post("http://localhost:3000/api/users", formData);
+ 
+      setFormData({ name: "", email: "" }); // Reset
+    } catch (err) {
+      console.error(err.message);
+      alert(err.message);
+    }
+
+  }
+
+  return (
+    <div className="createForm">
+      <h1>
+            Get FREE Access to a Huge Treasure Trove of Real Estate Investing
+            Know-How!
+          </h1>
+          <br />
+          <h3>Complete form below to join</h3>
+          <br />
+      <fieldset style={{ textAlign: "center" }}>
+        <legend>
+          Regiser
+        </legend>
+        <form onSubmit={handleSubmit}>
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              placeholder="Name..."
+              onChange={handleChange}
+              value={formData.name}
+              required
+            />
+          </label>
+          <br />
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="Email..."
+              onChange={handleChange}
+              value={formData.email}
+              required
+            />
+          </label>
+          <br />
+          <input type="submit" value="I Want My FREE Offer NOW!!" />
+        </form>
+      </fieldset>
+    </div>
+  );
+}
+*/
+/* I updated from encyclopedia CharterRoutes.js class project
+import { useState } from "react";
+import axios from "axios";
+import SubscriberList from "../components/SubscriberList.jsx";
+
+export default function HomePage() {
+  const [subscribers, setSubscribers] = useState(null);
+
+  async function handleFetch(e) {
+    try {
+      let res = await axios.get("http://localhost:3000/api/subscr");
+
+      setSubscribers(res.data);
+    } catch (err) {
+      console.error(err.message);
+    }
+  }
+
+  return (
+    <div className="greetings">
+      {subscribers ? (
+        subscribers.map((subscr) => (
+          <CharCard key={char._id} char={char} setCharacters={setCharacters} />
+        ))
+      ) : (
+        <button onClick={handleFetch}>Fetch Data</button>
+      )}
+    </div>
+  );
+}
+
+*/
+
+/* SAMPLE FORM CODE
+
 import '../components/styles.css';  
 
 import React, { useState } from "react";
@@ -42,8 +237,12 @@ export default function ContactForm() {
   };
 
   return (
+      
     <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "auto" }}>
-      <h2>Contact Us</h2>
+      <div className="join">
+      <h1>FREE Report: 5 Ways to Spot & Avoid Fake Gurus! </h1><br />
+      <h3>Complete form below to subscribe</h3><br />
+    </div>
       <input
         type="text"
         name="name"
@@ -71,16 +270,7 @@ export default function ContactForm() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
+*/
 
 /*export default function Contact() {
   return (
